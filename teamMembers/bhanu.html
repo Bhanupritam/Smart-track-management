@@ -3,25 +3,115 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Bhanu's Page</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="app.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #ffecd2, #fcb69f);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ff6f61;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 20px;
+            margin: 30px auto;
+            max-width: 800px;
+            background-color: #fff3cd;
+            border: 2px dashed #ff6f61;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        li {
+            margin: 15px 0;
+            padding: 10px;
+            background-color: #d4edda;
+            border-left: 6px solid #28a745;
+            border-radius: 8px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        li:hover {
+            transform: scale(1.03);
+            background-color: #c3e6cb;
+        }
+
+        h2 {
+            color: #155724;
+        }
+
+        h3 {
+            color: #856404;
+            font-style: italic;
+            padding: 10px;
+            background-color: #fff3cd;
+            border-radius: 8px;
+        }
+
+        .MainPage-button {
+            display: block;
+            margin: 30px auto;
+            padding: 12px 24px;
+            background-color: #17a2b8;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            border-radius: 50px;
+            transition: background-color 0.3s ease-in-out;
+            text-align: center;
+            width: fit-content;
+        }
+
+        .MainPage-button:hover {
+            background-color: #138496;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <h1>Welcome to Bhanu's Page</h1>
+        <h1>Welcome to Bhanu Pritam Vempali's Page</h1>
     </header>
+
     <ul>
         <h3>Professor Feedback: You need to add all 3 reflections</h3>
+
         <li>
-            <h2>Building the Repo</h2>
+            <h2>Use Case Diagram Reflection</h2>
+            <p>This diagram helped me identify the main actors and how they interact with the system. It clarified user goals and ensured all functionalities were aligned with business needs. It gave a high-level view of system functionality and was critical in planning development priorities.</p>
+        </li>
+
+        <li>
+            <h2>Sequence Diagram Reflection</h2>
+            <p>Creating the sequence diagram allowed me to understand how objects interact over time. It highlighted the flow of messages between the user interface, controller, and backend. This visualization helped me detect unnecessary dependencies and optimize communication logic.</p>
+        </li>
+
+        <li>
+            <h2>State Machine Diagram Reflection</h2>
+            <p>The state machine diagram allowed me to focus on how an object changes state in response to events. It was especially useful for modeling UI behavior and validating workflows. It enhanced my understanding of dynamic behavior within the application.</p>
         </li>
     </ul>
-</body>
 
     <!-- Return to Main Page -->
     <a href="../index.html" class="MainPage-button">⬅ Return to Main Page</a>
+</body>
 
 </html>
